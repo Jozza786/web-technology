@@ -1,0 +1,239 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.sidebar {
+    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+    color: white;
+    padding: 40px 30px;
+    min-height: 800px;
+}
+
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+
+.sidebar-section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #fbbf24;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fbbf24;
+    padding-bottom: 8px;
+}
+
+.section-title i {
+    margin-right: 8px;
+}
+
+
+.contact-list {
+    font-size: 14px;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.contact-list i {
+    color: #fbbf24;
+    margin-right: 10px;
+    width: 20px;
+}
+
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h6 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.skill-badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 8px 15px;
+    margin: 5px 5px 5px 0;
+    border-radius: 20px;
+    font-size: 13px;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+    background-color: white;
+    padding: 40px 50px;
+}
+
+
+.header-section {
+    margin-bottom: 30px;
+}
+
+.name {
+    color: #2d3748;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: #667eea;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+
+.content-section {
+    margin-bottom: 35px;
+}
+
+.content-heading {
+    color: #2d3748;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 8px;
+}
+
+.content-heading i {
+    color: #667eea;
+    margin-right: 10px;
+}
+
+
+.profile-text {
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+.experience-card {
+    border: none;
+    border-left: 4px solid #667eea;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
+}
+
+.job-title {
+    color: #2d3748;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.company-name {
+    color: #667eea;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.job-description {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.date-badge {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    box-shadow: 0 2px 4px rgba(251, 191, 36, 0.3);
+}
+
+
+.reference-card {
+    border: 2px solid #e5e7eb;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(102, 126, 234, 0.1);
+    transition: all 0.3s ease;
+}
+
+.reference-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.2);
+}
+
+.reference-card h6 {
+    color: #2d3748;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.reference-card i {
+    color: #fbbf24;
+    margin-right: 5px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+    
+    .sidebar {
+        min-height: auto;
+        padding: 30px 20px;
+    }
+    
+    .main-content {
+        padding: 30px 20px;
+    }
+    
+    .name {
+        font-size: 36px;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+    
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}

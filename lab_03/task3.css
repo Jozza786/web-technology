@@ -1,0 +1,149 @@
+
+body {
+    background: white;
+    padding: 50px 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.id-card {
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    background: white;
+    position: relative;
+}
+
+
+.id-card::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+   
+}
+
+
+.id-header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 20px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-placeholder {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.university-title {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+
+.id-content {
+    padding: 25px 30px;
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+
+
+.photo-container {
+    padding-right: 20px;
+}
+
+.student-photo-id {
+    width: 100%;
+    height: auto;
+    border: 3px solid #2a5298;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.details-section {
+    padding-left: 10px;
+}
+
+.student-name-id {
+    color: #0d2146;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.info-line {
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: flex;
+}
+
+.info-label {
+    color: #1e3c72;
+    font-weight: bold;
+    min-width: 100px;
+    display: inline-block;
+}
+
+.info-value {
+    color: #333;
+}
+
+
+.button-section {
+    padding: 25px 30px 30px;
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background: #2a5298;
+}
+
+.btn-primary:hover {
+    background: #1e3c72;
+   
+    box-shadow: 0 5px 15px rgba(42, 82, 152, 0.3);
+}
+
+.university-title{
+    font-family: 'Times New Roman', Times, serif;
+}

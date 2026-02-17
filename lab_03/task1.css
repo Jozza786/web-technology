@@ -1,0 +1,21 @@
+body {
+    background-color: #fdf6ee;
+}
+
+h1 {
+    font-weight: bold;
+    color: #311803;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.list-group-item {
+    background-color: #eedac8;
+    color: #1f2e30;
+}
+h3{
+    font-weight: bold;
+    color: #311803;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}

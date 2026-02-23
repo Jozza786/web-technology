@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 4 - Student Result Calculator</title>
+  <style>
+    body { font-family: Arial; padding: 30px; background: #96a2c4; }
+    input { padding: 8px; margin: 5px 0; width: 200px; font-size: 16px; }
+    label { font-size: 15px; display: block; margin-top: 10px; }
+    button { padding: 10px 25px; background: #673AB7; color: white; border: none; font-size: 16px; cursor: pointer; border-radius: 5px; margin-top: 15px; }
+    button:hover { background: #512DA8; }
+    .box { background: rgb(213, 244, 248); padding: 25px; border-radius: 10px; max-width: 380px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    #result { margin-top: 20px; padding: 15px; border-radius: 8px; font-size: 16px; line-height: 2; display: none; }
+    .grade-A { background: #e8f5e9; border-left: 5px solid #4CAF50; }
+    .grade-B { background: #e3f2fd; border-left: 5px solid #2196F3; }
+    .grade-C { background: #fff8e1; border-left: 5px solid #FFC107; }
+    .grade-F { background: #fce4ec; border-left: 5px solid #F44336; }
+    .h2{color: #043964;}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Task 4: Student Result Calculator</h2>
+
+    <label>Subject 1 Marks (out of 100):</label>
+    <input type="number" id="s1" placeholder="e.g. 75">
+
+    <label>Subject 2 Marks (out of 100):</label>
+    <input type="number" id="s2" placeholder="e.g. 80">
+
+    <label>Subject 3 Marks (out of 100):</label>
+    <input type="number" id="s3" placeholder="e.g. 65">
+
+    <button onclick="calculate()">Calculate Result</button>
+
+    
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function calculate() {
+
+      let m1 = Number(document.getElementById("s1").value);
+      let m2 = Number(document.getElementById("s2").value);
+      let m3 = Number(document.getElementById("s3").value);
+
+  
+      if (m1 < 0 || m1 > 100 || m2 < 0 || m2 > 100 || m3 < 0 || m3 > 100) {
+        alert("Please enter marks between 0 and 100!");
+        return;
+      }
+
+      let total = m1 + m2 + m3;
+
+      
+      let percentage = (total / 300) * 100;
+
+    
+      let grade = "";
+      let gradeClass = "";
+
+      if (percentage >= 80) {
+        grade = "A  (Excellent!)";
+        gradeClass = "grade-A";
+      } else if (percentage >= 60) {
+        grade = "B  (Good)";
+        gradeClass = "grade-B";
+      } else if (percentage >= 40) {
+        grade = "C (Average)";
+        gradeClass = "grade-C";
+      } else {
+        grade = "F (Fail)";
+        gradeClass = "grade-F";
+      }
+
+
+      let resultDiv = document.getElementById("result");
+      resultDiv.style.display = "block";
+      resultDiv.className = gradeClass;
+
+ 
+      resultDiv.innerHTML =
+        "Subject 1: " + m1 + "<br>" +
+        "Subject 2: " + m2 + "<br>" +
+        " Subject 3: " + m3 + "<br>" +
+        " Total: " + total + " / 300<br>" +
+        " Percentage: " + percentage.toFixed(2) + "%<br>" +
+        "Grade: " + grade;
+    }
+  </script>
+</body>
+</html>

@@ -1,4 +1,5 @@
 LAB04
+
 JAVASCRIPT
 
 task1 =  Takes two numbers and shows their product in a popup.

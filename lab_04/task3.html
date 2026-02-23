@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 3 - Loops</title>
+  <style>
+    body { font-family: Arial; padding: 30px; background: #f0f4ff; }
+    button { padding: 10px 20px; color: rgb(8, 8, 8); border: none; font-size: 15px; cursor: pointer; border-radius: 5px; margin: 5px; }
+    .btn1 { background: #efb2fa; 
+    }
+    .btn2 { background: #ebd4b3; }
+    .btn3 { background: #e2b4b0; }
+    .box { background: white; padding: 20px; border-radius: 10px; max-width: 400px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    #output { margin-top: 15px; font-size: 16px; line-height: 1.8; background: #f9f9f9; padding: 15px; border-radius: 8px; min-height: 50px; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Task 3: Loops</h2>
+
+    <button class="btn1" onclick="allNumbers()">1–20 All Numbers</button>
+    <button class="btn2" onclick="evenNumbers()">Even Numbers Only</button>
+    <button class="btn3" onclick="reverseNumbers()">Reverse (10–1)</button>
+
+    <div id="output">Click a button to see the result!</div>
+  </div>
+
+  <script>
+
+    
+    function allNumbers() {
+      let result = ""; 
+
+      for (let i = 1; i <= 20; i++) {
+        result = result + i + "  "; 
+      }
+
+      document.getElementById("output").innerHTML = "All numbers: " + result;
+    }
+
+    function evenNumbers() {
+      let result = "";
+
+      for (let i = 1; i <= 20; i++) {
+       
+        if (i % 2 == 0) {
+          result = result + i + "  ";
+        }
+      }
+
+      document.getElementById("output").innerHTML = "Even numbers: " + result;
+    }
+
+    function reverseNumbers() {
+      let result = "";
+
+      for (let i = 10; i >= 1; i--) {
+        result = result + i + "  ";
+      }
+
+      document.getElementById("output").innerHTML = "Reverse: " + result;
+    }
+
+  </script>
+</body>
+</html>

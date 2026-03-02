@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 3 - Array Operations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0fff4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .box {
+      background-color: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      width: 500px;
+    }
+
+    h2 { color: #333; margin-bottom: 6px; }
+    p.subtitle { color: #888; font-size: 14px; margin-bottom: 25px; }
+
+
+    .result-section {
+      background-color: #f8f9fa;
+      border-left: 5px solid #43aa8b;  
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    .result-section h3 {
+      font-size: 13px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .result-section p {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2c7a5a;
+      margin: 0;
+    }
+
+    .section-2 { border-left-color: #6c63ff; }
+    .section-2 p { color: #6c63ff; }
+
+    .section-3 { border-left-color: #f8961e; }
+    .section-3 p { color: #f8961e; }
+
+    .section-4 { border-left-color: #ff6584; }
+    .section-4 p { color: #ff6584; }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2> Array Operations</h2>
+    <p class="subtitle">Working with an array of 6 numbers</p>
+
+
+    <div class="result-section" id="show-original">
+      <h3>Original Array</h3>
+      <p id="original-output">Loading...</p>
+    </div>
+
+    <div class="result-section section-2" id="show-sum">
+      <h3>Sum of All Numbers</h3>
+      <p id="sum-output">Loading...</p>
+    </div>
+
+    <div class="result-section section-3" id="show-largest">
+      <h3>Largest Number</h3>
+      <p id="largest-output">Loading...</p>
+    </div>
+
+    <div class="result-section section-4" id="show-reversed">
+      <h3>Array in Reverse Order</h3>
+      <p id="reversed-output">Loading...</p>
+    </div>
+  </div>
+
+
+  <script>
+   
+    let numbers = [15, 42, 8, 73, 26, 51];
+   
+    document.getElementById("original-output").innerHTML = numbers.join(", ");
+
+
+    
+
+    let sum = 0;  
+
+    for (let i = 0; i < numbers.length; i++) {
+   
+      sum = sum + numbers[i];
+    }
+
+    document.getElementById("sum-output").innerHTML = sum;
+
+
+    let largest = numbers[0]; 
+
+    for (let i = 1; i < numbers.length; i++) {
+
+      if (numbers[i] > largest) {
+        largest = numbers[i]; 
+      }
+      
+    }
+
+    document.getElementById("largest-output").innerHTML = largest;
+
+    let reversedArray = numbers.slice().reverse();
+
+    document.getElementById("reversed-output").innerHTML = reversedArray.join(", ");
+
+  </script>
+
+</body>
+</html>

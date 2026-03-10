@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #fde9d3 0%, #d4e9ff 50%, #c9f0e8 100%);
+}
+
+.blob {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+.blob1 { width: 350px; height: 350px; background: #f9c5a0; top: -80px; left: -80px; }
+.blob2 { width: 300px; height: 300px; background: #a8d8f0; bottom: -80px; right: -60px; }
+.blob3 { width: 200px; height: 200px; background: #b5ead7; top: 45%; left: 60%; }
+
+
+.app {
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  padding: 20px;
+}
+
+.title-area {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.title-area h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2d4a6e;
+  letter-spacing: -1px;
+}
+.title-area p {
+  color: #7a90aa;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+#cityInput {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.75);
+  color: #2d4a6e;
+  box-shadow: 0 4px 16px rgba(100, 150, 200, 0.15);
+}
+#cityInput::placeholder { color: #aabccc; }
+#cityInput:focus {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 20px rgba(100, 150, 220, 0.25);
+}
+
+#searchBtn {
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #74b9f5, #4a90d9);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(74, 144, 217, 0.4);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+#searchBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 144, 217, 0.5);
+}
+
+.last-searched {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #7a90aa;
+  margin-bottom: 14px;
+}
+#lastCity { color: #3a7bd5; font-weight: 700; }
+#reloadBtn {
+  background: rgba(255,255,255,0.6);
+  border: 1.5px solid #74b9f5;
+  color: #3a7bd5;
+  border-radius: 30px;
+  padding: 3px 14px;
+  font-size: 0.78rem;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: background 0.2s;
+}
+#reloadBtn:hover { background: #74b9f5; color: white; }
+
+.error-box {
+  background: rgba(255, 220, 220, 0.7);
+  border: 1.5px solid #ffaaaa;
+  color: #d94f4f;
+  border-radius: 16px;
+  padding: 12px 18px;
+  text-align: center;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  backdrop-filter: blur(6px);
+}
+
+.loading-box {
+  text-align: center;
+  padding: 30px;
+  color: #7a90aa;
+}
+.spinner {
+  width: 34px;
+  height: 34px;
+  border: 3px solid rgba(74, 144, 217, 0.2);
+  border-top-color: #4a90d9;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 12px auto;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 28px;
+  padding: 28px;
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 32px rgba(100, 150, 200, 0.2);
+  backdrop-filter: blur(16px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.city-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2d4a6e;
+}
+.condition {
+  color: #7a90aa;
+  font-size: 0.88rem;
+  margin-top: 3px;
+  text-transform: capitalize;
+}
+.weather-icon { font-size: 3.5rem; }
+
+.temperature {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #2d4a6e;
+  line-height: 1;
+  margin-bottom: 22px;
+}
+.temperature::after {
+  content: "°C";
+  font-size: 2rem;
+  font-weight: 400;
+  color: #7a90aa;
+  margin-left: 4px;
+  vertical-align: super;
+}
+
+.details { display: flex; gap: 10px; }
+.detail-box {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  padding: 14px 8px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 8px rgba(100, 150, 200, 0.1);
+}
+.detail-label {
+  display: block;
+  font-size: 0.68rem;
+  color: #7a90aa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 4px 0 3px;
+}
+.detail-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2d4a6e;
+}
+
+.hidden { display: none !important; }

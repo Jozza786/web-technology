@@ -13,4 +13,6 @@
 
  [Lab 06 ](./lab_06)  |Javascript 3 |
 
+ [Lab 07 ](./lab_07)  |Typescript |
+
  

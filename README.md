@@ -15,4 +15,6 @@
 
  [Lab 07 ](./lab_07)  |Typescript |
 
+ [Lab 08 ](./lab_08)  |Angular JS |
+
  

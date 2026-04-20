@@ -17,4 +17,6 @@
 
  [Lab 08 ](./lab_08)  |Angular JS |
 
+ [Lab 09 ](./lab_09)  |Node JS |
+
  

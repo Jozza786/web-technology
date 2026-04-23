@@ -13,4 +13,4 @@ Fetch API · async/await · localStorage · addEventListener · DOM Manipulation
 
  Preview
 
- <img width="580" height="480" alt="image" src="https://github.com/user-attachments/assets/9bae82d2-99ff-4942-a482-d630c2c01a87" />
+ <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/9bae82d2-99ff-4942-a482-d630c2c01a87" />

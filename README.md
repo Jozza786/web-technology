@@ -5,18 +5,18 @@
  
  Labs:
  
- [Lab 03](./lab_03) | Bootstrap |
+ [Lab 03](./lab_03)    | Bootstrap |
  
- [Lab 04 ](./lab_04)  |Javascript 1 |
+ [Lab 04 ](./lab_04)   |Javascript 1 |
 
- [Lab 05 ](./lab_05)  |Javascript 2 |
+ [Lab 05 ](./lab_05)   |Javascript 2 |
 
- [Lab 06 ](./lab_06)  |Javascript 3 |
+ [Lab 06 ](./lab_06)   |Javascript 3 |
 
- [Lab 07 ](./lab_07)  |Typescript |
+ [Lab 07 ](./lab_07)   |Typescript |
 
- [Lab 08 ](./lab_08)  |Angular JS |
+ [Lab 08 ](./lab_08)   |Angular JS |
 
- [Lab 09 ](./lab_09)  |Node JS |
+ [Lab 09 ](./lab_09)   |Node JS |
 
  

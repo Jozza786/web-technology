@@ -19,4 +19,6 @@
 
  [Lab 09 ](./lab_09)   |Node JS |
 
+ [Lab 10 ](./lab_10)   |Angular 2|
+
  

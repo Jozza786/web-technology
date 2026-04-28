@@ -1,0 +1,20 @@
+.contact {
+  padding: 20px;
+  background-color: #98d8a1;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #113a53;
+  font-size: 28px;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  text-align: center;
+  color: #164969;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
